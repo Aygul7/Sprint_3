@@ -1,9 +1,6 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
-from tests.Locators import TestLocators
+from locators.locators import TestLocators
 
 
 #тест 1 - успешная регистрация с именем "Aygul", email "aygulshafigullina_4_789@ya.ru", паролем "123456"

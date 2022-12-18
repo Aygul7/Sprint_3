@@ -1,9 +1,6 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
-from tests.Locators import TestLocators
+from locators.locators import TestLocators
 
 # тест 8 - Переход из личного кабинета в конструктор по клику на Конструктор
 def test_move_to_constructor_button_constructor(driver):

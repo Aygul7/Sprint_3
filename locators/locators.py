@@ -1,8 +1,5 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
+
 class TestLocators:
     LOGIN_BUTTON = By.XPATH, "//button[contains(text(),'Войти в аккаунт')]" # кнопка "Войти в аккаунт"
     LOCATOR_ENTER_H2 = By.XPATH, "//h2[contains(text(),'Вход')]" # название страницы "Вход"
@@ -13,13 +10,12 @@ class TestLocators:
     REG_FIELD_PASSWORD = By.XPATH, ".//input[@type='password']" #локатор поля "Пароль"
     REGISTRATION_BUTTON = By.XPATH, "//button[contains(text(),'Зарегистрироваться')]" #локатор кнопки "Зарегистрироваться"
     REGISTRATION_ERROR_MESSAGE = By.XPATH, "//p[contains(text(),'Некорректный пароль')]" #локатор сообщения об ошибке при регистрации
-    AUTH_FIELD_EMAIL = By.XPATH, ".//input[@name='name']" # поле Email на странице "Вход"
+    AUTH_FIELD_EMAIL = By.XPATH, ".//input[@name='name']" # поле Email на странице "Вход" и при входе по кнопке "Войти" и "Личный кабинет"
     AUTH_FIELD_PASSWORD = By.XPATH, ".//input[@type='password']"  # поле Пароль на странице "Вход"
     AUTH_LOGIN_BUTTON = By.XPATH, "// button[contains(text(), 'Войти')]" # кнопка "Войти" на странице "Вход"
     PERSONAL_CABINET = By.XPATH, "//p[contains(text(),'Личный Кабинет')]" # кнопка "Личный кабинет"
     LOGIN_TEXT_REGISTRATION_FORM = By.XPATH, "//a[contains(text(),'Войти')]" # "Войти" на странице "Регистрация"
     RESTORE_PASSWORD_TEXT = By.XPATH,"//a[contains(text(),'Восстановить пароль')]"  # гипертекст "Восстановить пароль"
-    AUTH_FIELD_EMAIL = By.XPATH, ".//input[@name='name']" # поле для ввода email при входе по кнопке "Войти" и "Личный кабинет"
     LOGIN_TEXT_RESTORE_PASSWORD = By.XPATH, "//a[contains(text(),'Войти')]" # "Войти" на странице "Восстановление пароля"
     PROFILE_BUTTON = By.XPATH, "//a[contains(text(),'Профиль')]" # кнопка "Профиль" (в личном кабинете)
     CONSTRUCTOR_BUTTON = By.XPATH, "//p[contains(text(),'Конструктор')]" # кнопка "Конструктор"

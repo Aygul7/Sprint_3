@@ -1,9 +1,6 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
-from tests.Locators import TestLocators
+from locators.locators import TestLocators
 
 # тест 3 - войти с правильным email и паролем по кнопке "Войти"
 def test_auth_login(driver):
