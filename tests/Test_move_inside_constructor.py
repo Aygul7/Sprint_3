@@ -56,3 +56,4 @@ def test_move_inside_constructor_click_buns(driver):
     driver.find_element(*TestLocators.BREAD_HORIZONTAL_MENU).click()
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((TestLocators.FLOUR_BREAD_BUTTON)))
     assert driver.find_element(*TestLocators.FLOUR_BREAD_BUTTON).text == 'Флюоресцентная булка R2-D3'
+
